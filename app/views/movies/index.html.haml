@@ -1,0 +1,67 @@
+.wrapper
+  .header
+    .header__box
+      .header__box__top
+        %h1.header__box__top__logo 
+          movie_app
+          .header__box__top__logo__link
+        %form.header__box__top__search
+          %input.header__box__top__search__box{type:"search",name:"keyword",placeholder:"何かお探しですか？"}
+            %input.header__box__top__search__box__submit-btn{type: "submit", value: "検索"}
+            -# %i.fas.fa-search
+      .header__box__nav
+        .header__box__nav__left
+          %ul.header__box__nav__left__content
+            %li.header__box__nav__left__content__list
+              %h2.header__box__nav__left__content__list__heading
+                -# =link_to "#" do
+                -#   .header__box__nav__left__content__list__heading__link
+                -#     %i.header__box__nav__left__content__list__heading__link__icon.fas.fa-list-ul
+                -#     %span.header__box__nav__left__content__list__heading__link__text カテゴリーから探す
+        .header__box__nav__right
+          %ul.header__box__nav__right__content
+            -# -if user_signed_in?
+            -#   %li.header__box__nav__right__content__list
+            -#     =link_to "#" do
+            -#       .header__box__nav__right__content__list__link
+            -#         %i.header__box__nav__right__content__list__link__icon.far.fa-bell
+            -#         %span.header__box__nav__right__content__list__link__text お知らせ
+            -#   %li.header__box__nav__right__content__list
+            -#     =link_to "#" do
+            -#       .header__box__nav__right__content__list__link
+            -#         %i.header__box__nav__right__content__list__link__icon.fas.fa-check
+            -#         %span.header__box__nav__right__content__list__link__text やることリスト
+            -#   %li.header__box__nav__right__content__list
+            -#     =link_to mypage_path, method: :get do
+            -#       .header__box__nav__right__content__list__link
+            -#         .header__box__nav__right__content__list__link__figure
+            -#           .header__box__nav__right__content__list__link__figure__image
+            -#           -# = image_tag "member_photo_noimage_thumb.png", size: "30x30", alt: "ユーザーロゴ", class: "header__box__nav__right__content__list__link__figure__image"
+            -#           %span.header__box__nav__right__content__list__link__figure__text マイページ
+            -# -else
+              -# %li.header__box__nav__right__content__list
+              -#   -# =link_to new_user_registration_path, method: :get do
+              -#   =link_to new_user_registration_path, method: :get do
+              -#     .header__box__nav__right__content__list__link
+              -#       .header__box__nav__right__content__list__link--text-red 新規会員登録
+              -# %li.header__box__nav__right__content__list
+              -#   =link_to new_user_session_path, method: :get do
+              -#     .header__box__nav__right__content__list__link
+              -#       .header__box__nav__right__content__list__link--text-blue ログイン
+  .content
+    .pickup
+      %h2.pickup__heading 検索結果
+      .pickup__article
+        .pickup__artcle__box
+          =render partial:"movies"
+          -# %a{href:"http://localhost:3000/assets/ttimg-281bfbd0a90a223b07b8d6388551c84a07bed5db39cb341fc9ab5c030ec90812.jpg","data-lity":"data-lity"}
+          -#   =image_tag"ttimg.jpg",size:"20×20"
+          -# .pickup__article__box__content
+          -#   =link_to "#",method: :get do
+          -#    .pickup__article__box__content__link
+          -#      .pickup__article__box__content__link__figure
+          -#        .pickup__article__box__content__link__body
+          -#          %h3.pickup__article__box__content__link__body__title 
+          -#           .pickup__article__box__content__link__body__url
+
+                    
