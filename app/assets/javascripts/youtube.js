@@ -1,4 +1,4 @@
-
+const KEY = gon.youtube_key;
 let url = 'https://www.googleapis.com/youtube/v3/search?'; // APIURL
 url += 'type=video'; //動画を検索する
 url += '&part=snippet';//検索結果にすべてのプロパティを含む
