@@ -63,3 +63,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'haml-rails'
 gem 'google-api-client', '<0.9'
 gem 'jquery-rails'
+gem 'gon'
+gem 'dotenv-rails'
